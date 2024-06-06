@@ -1,0 +1,438 @@
+ 
+        .body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .body1 {
+            font-family: Arial, sans-serif;
+            background-color:linear-gradient(to bottom right, #e6f7ff, #b3d9ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .booking-assistant {
+            width: 400px;
+            height: 600px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #4cb2f0;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 15px;
+            background-color: #f0f0f0;
+            overflow-y: auto;
+        }
+
+        .message{ 
+            background-color: #e7e7e7;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    position: relative;
+        }
+        .command {
+            background-color: #d1edff;
+        }
+
+        
+
+        .input-container {
+            display: flex;
+            border-top: 1px solid #dddddd;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+
+        .input-container input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .input-container button {
+            padding: 10px 15px;
+            background-color: #4cb2f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .inner-container {
+            display: none;
+            flex-direction: column;
+            height: 100%;
+            color: #100e0e
+        }
+
+        .grey-container {
+            background-color: #f0ebeb;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .inner-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .pnr-input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            color:#000000;
+            padding: 20px;
+            
+            
+        }
+
+        .pnr-input input {
+            border-radius :5px; 
+            border :1px solid #000000; 
+            padding :10px; 
+            margin-bottom :20px; 
+            text-align: center;
+        }
+
+        .pnr-input button {
+            padding: 15px;
+            background-color: #4cb2f0;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .submit-button {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background-color: #3498db; /* Blue background color */
+    border-radius: 50%; /* Makes it circular */
+    position: relative;
+  }
+
+  .submit-button::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px); /* Centers the line vertically, adjust thickness here */
+    left: calc(50% - 10px); /* Centers the line horizontally, adjust width here */
+    width: 20px; /* Length of the arrow line */
+    height: 4px; /* Thickness of the arrow line */
+    background-color: white;
+  }
+
+  .submit-button::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 7.5px);
+    left: calc(50% + 5px);
+    border-left: 7.5px solid white;
+    border-top: 7.5px solid transparent;
+    border-bottom: 7.5px solid transparent;
+  }
+
+        .segment-option {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px 0;
+            display: flex;
+            align-items: left;
+        }
+
+        .segment-option input {
+            margin-right: 10px;
+            
+        }
+
+        .navigation-buttons {
+            padding: 10%;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .navigation-buttons button {
+            padding: 10px 20px;
+            background-color: #f0a94c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .date-picker {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .calendar {
+            width: 300px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4cb2f0;
+            color: white;
+            padding: 10px;
+        }
+
+        .calendar-body {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .calendar-day {
+            width: calc(100% / 7);
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .calendar-day.selected {
+            background-color: #4cb2f0;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .class-change-page {
+            text-align: center;
+        }
+
+        .class-change-page .question {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .class-change-page .radio-buttons {
+            margin-bottom: 20px;
+        }
+
+        .class-change-page .radio-buttons input {
+            margin-right: 10px;
+        }
+
+        .class-change-page .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .class-change-page .navigation-buttons button {
+            padding: 10px 20px;
+            background-color: #4cb2f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .step1-page {
+            text-align: center;
+        }
+
+        .step1-page .step-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .step1-page .step-description {
+            margin-bottom: 20px;
+        }
+
+        .step1-page .command-box {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .step1-page .command-box span {
+            margin-right: 10px;
+        }
+
+        .step1-page .command-box button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .step1-page .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10%;
+        }
+
+        .step1-page .navigation-buttons button {
+            padding: 10px 20px;
+            background-color: #4cb2f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .step2-page {
+            text-align: center;
+        }
+
+        .step2-page .step2-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .step2-page .step2-description {
+            margin-bottom: 20px;
+        }
+
+        .step2-page .command2-box {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .step2-page .command2-box span {
+            margin-right: 10px;
+        }
+
+        .step2-page .command2-box button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .step2-page .navigation2-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10%;
+        }
+
+        .step2-page .navigation2-buttons button {
+            padding: 10px 20px;
+            background-color: #4cb2f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .step3-page {
+            text-align: center;
+        }
+
+        .info {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .step {
+            border-bottom: 1px solid #e6e6e6;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .button {
+            background-color: #00AEEF;
+            color: white;
+            border: none;
+            width: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+        }
+        .copy-icon {
+            cursor: pointer;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        .step3-page .command3-box {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .step3-page .command3-box span {
+            margin-right: 10px;
+        }
+
+        .step3-page .command3-box button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .step3-page {
+            text-align:left;
+        }
